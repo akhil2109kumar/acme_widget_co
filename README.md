@@ -19,11 +19,14 @@ For add items on basket from input
 ```
 ruby run_basket.rb
 ```
+![Screenshot from 2024-08-07 18-13-13](https://github.com/user-attachments/assets/b3e78447-8e9f-47c3-94a2-a23238b2b89e)
+
 Alternatively, if you're using Docker:
 
 ```
 docker-compose up
 ```
+![Screenshot from 2024-08-07 18-17-27](https://github.com/user-attachments/assets/33b9420f-6b61-49e6-b742-9b5f3a5fe971)
 
 ## Running Tests
 
