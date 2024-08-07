@@ -18,10 +18,24 @@ delivery_rules = [
   DeliveryRule.new(90, 0) # orders of $90 or more
 ]
 
-# Initialize offers
-offers = [
-  Offer.new('R01', 2, 50) # buy one red widget, get the second half price
-]
+# Get user input for offers
+puts "Enter offers."
+offers = []
+loop do
+  print "Enter product code (or press enter to finish): "
+  product_code = gets.chomp
+
+  break if product_code.empty?
+
+  print "Enter quantity: "
+  quantity = gets.chomp.to_i
+
+  print "Enter discount percentage: "
+  discount_percentage = gets.chomp.to_i
+
+  offers << Offer.new(product_code, quantity, discount_percentage)
+  puts "Added offer: buy #{quantity} #{product_code}, get #{discount_percentage}% off"
+end
 
 # Create a new basket
 basket = Basket.new(catalog, delivery_rules, offers)
