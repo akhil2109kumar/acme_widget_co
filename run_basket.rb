@@ -37,9 +37,13 @@ loop do
   puts "Added offer: buy #{quantity} #{product_code}, get #{discount_percentage}% off"
 end
 
+offers = [
+  Offer.new('R01', 2, 50) # buy one red widget, get the second half price
+] if offers.empty?
+
 # Create a new basket
 basket = Basket.new(catalog, delivery_rules, offers)
-
+puts "-------------------------------------------------------------------------" #seprate for Acme Widget Co Basket System!
 puts "Welcome to the Acme Widget Co Basket System!"
 puts "Available products: R01 (Red Widget), G01 (Green Widget), B01 (Blue Widget)"
 puts "Enter product codes one by one. Type 'done' when finished."
