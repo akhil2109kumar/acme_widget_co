@@ -39,8 +39,18 @@ bundle exec rspec
 Alternatively, if you're using Docker:
 
 ```
-docker-compose up
+sudo docker build -t acme_widget_co .
 ```
+```
+sudo systemctl start docker
+```
+```
+sudo docker-compose up --build
+```
+```
+sudo docker run acme_widget_co
+```
+
 
 ## Implementation Details
 
