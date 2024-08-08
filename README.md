@@ -24,7 +24,7 @@ ruby run_basket.rb
 Alternatively, if you're using Docker:
 
 ```
-docker-compose up
+sudo docker-compose up --build
 ```
 ![Screenshot from 2024-08-07 18-17-27](https://github.com/user-attachments/assets/33b9420f-6b61-49e6-b742-9b5f3a5fe971)
 
